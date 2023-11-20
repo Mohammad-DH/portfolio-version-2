@@ -1,0 +1,8 @@
+.name {
+  transform: perspective(500px) translateZ(-3000px);
+  z-index: -2;
+}
+.nameCard {
+  justify-content: center;
+  align-items: center;
+}

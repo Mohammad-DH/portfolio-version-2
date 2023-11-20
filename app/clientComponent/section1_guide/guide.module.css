@@ -1,0 +1,21 @@
+.guide {
+  transform: perspective(500px) translateZ(0px);
+  z-index: 0;
+}
+
+.guideCard {
+  justify-content: center;
+  align-items: center;
+  filter: blur(0px);
+  transform: bendZ(180deg);
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+/* smartphone */
+@media all and (max-width: 480px) {
+}

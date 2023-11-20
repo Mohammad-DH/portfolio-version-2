@@ -1,60 +1,10 @@
-.main {
-}
-.glassmorphism {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Set a semi-transparent background color */
-  border-radius: 10px; /* Apply rounded corners to the element */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
-  backdrop-filter: blur(10px); /* Apply a blur effect to create frosted glass */
-  padding: 20px; /* Add some padding to the content */
-}
-
 .wrapper {
+  position: relative;
   width: 100dvw;
-  height: 100dvh;
+  height: 9000px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.page {
-  width: 95dvw;
-  height: 95dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.opening {
-  position: absolute;
-  transform: perspective(5000px) translateZ(0px);
-}
-
-.intro {
-  position: absolute;
-  transform: perspective(5000px) translateZ(-1000px);
-}
-
-.name {
-  position: absolute;
-  transform: perspective(5000px) translateZ(-2000px);
-}
-
-.skills {
-  position: absolute;
-  transform: perspective(5000px) translateZ(-3000px);
-}
-
-.experience {
-  position: absolute;
-  transform: perspective(5000px) translateZ(-4000px);
-}
-
-.contact {
-  position: absolute;
-  transform: perspective(5000px) translateZ(-5000px);
+  overflow: hidden;
+  z-index: 1;
 }

@@ -1,0 +1,351 @@
+.contact {
+  transform: perspective(500px) translateZ(-7500px);
+  z-index: -5;
+}
+.contactCard {
+  align-items: center;
+  justify-content: center;
+}
+.contactImagesBox {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.contactImagesBox1 {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contactImagesBox2 {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.contactImage {
+  object-fit: contain;
+  width: 60% !important;
+  position: relative !important;
+  height: unset !important;
+  transition: transform 0.5s ease-out;
+}
+.contactImage1 {
+  margin-left: 2vw;
+}
+.contactImage2 {
+  margin-right: 2vw;
+}
+.contactPanel {
+  width: 40%;
+  height: 37.2dvw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+}
+.contactPanelBox1 {
+  position: relative;
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: #4971ff;
+  border-radius: 0.8vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactReactionTitle {
+  z-index: 2;
+  opacity: 0.5;
+  margin-top: 0.6rem;
+  width: 50%;
+}
+.contactReactionItems {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactEmojiName {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.contactEmojiNameText {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+  font-weight: bold;
+}
+.contactEmojiImages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactEmoji {
+  width: 4dvw;
+  height: 4dvw;
+  cursor: pointer;
+}
+.contactReactionRefresh {
+  position: absolute;
+  bottom: 7%;
+  right: 2%;
+  width: 0.8vw;
+  height: 0.8vw;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+.contactReactionRefresh:hover {
+  transform: scale(1.1);
+}
+.contactPanelBox2 {
+  position: relative;
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #4971ff;
+  border-radius: 0.8vw;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+.contactPanelBox2:hover {
+  transform: scale(1.1);
+}
+.contactPanelImages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactPanelHi {
+  opacity: 80%;
+  z-index: 2;
+  width: 80%;
+}
+.contactPanelHand {
+  width: 7.5dvw;
+  height: 7.5dvw;
+  transform-origin: bottom center;
+  animation: loop 2s infinite;
+}
+@keyframes loop {
+  0% {
+    transform: rotate(18deg);
+  }
+  50% {
+    transform: rotate(-18deg);
+  }
+  100% {
+    transform: rotate(18deg);
+  }
+}
+.contactPanelHeart {
+  width: 7.5dvw;
+  height: 7.5dvw;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.contactPanelHeartBox {
+  transform: translateY(100%);
+}
+.contactPanelBox3 {
+  grid-area: 2 / 1 / 5 / 4;
+  background-color: #4971ff;
+  border-radius: 0.8vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.8vw;
+}
+.contactPanelBox3 input {
+  width: 100%;
+  height: 12%;
+  border-radius: 0.6vw;
+  margin-bottom: 0.8vw;
+  font-size: 1.2rem;
+  padding: 0 0.5vw;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.5s ease-out;
+}
+.contactPanelBox3 textarea {
+  width: 100%;
+  height: 50%;
+  border-radius: 0.5vw;
+  padding: 0.6vw;
+  font-size: 1.2rem;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.5s ease-out;
+}
+.contactPanelBox3 input:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+.contactPanelBox3 textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+.contactPanelBox4 {
+  grid-area: 2 / 4 / 5 / 5;
+  background-color: #4971ff;
+  border-radius: 0.8vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactPanelBox4 a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+.contactSocialImages {
+  width: 4dvw;
+  height: 4dvw;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+.contactSocialImagesResume {
+  width: 4.5dvw;
+  height: 4.5dvw;
+}
+.contactSocialImages:hover {
+  transform: scale(1.1);
+}
+.contactPanelBtn {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 12%;
+  margin-top: 20%;
+  border-radius: 0.5vw;
+  background-color: #83ff81;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+.contactPanelBtn:hover {
+  transform: scale(1.02);
+}
+
+.contactPanelBtnImages {
+  object-fit: contain;
+  width: 20% !important;
+  position: relative !important;
+  height: unset !important;
+  transition: transform 0.5s ease-out;
+}
+
+/* smartphone */
+@media all and (max-width: 480px) {
+  .contactCard {
+    flex-direction: column;
+  }
+
+  .contactPanel {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .contactPanelBox1 {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  .contactPanelBox2 {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .contactPanelBox3 {
+    grid-area: 2 / 1 / 8 / 6;
+  }
+  .contactPanelBox4 {
+    grid-area: 8 / 1 / 9 / 6;
+    flex-direction: row-reverse;
+  }
+
+  .contactReactionTitle {
+    display: none;
+  }
+  .contactEmojiNameText {
+    font-size: 12vw;
+  }
+  .contactEmoji {
+    width: 10dvw;
+    height: 10dvw;
+  }
+  .contactReactionRefresh {
+    display: none;
+  }
+  .contactPanelHand {
+    width: 15dvw;
+    height: 15dvw;
+  }
+  .contactPanelHeart {
+    width: 15dvw;
+    height: 15dvw;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .contactImagesBox {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactSocialImages {
+    width: 12dvw;
+    height: 12dvw;
+  }
+  .contactSocialImagesResume {
+    width: 10dvw;
+    height: 10dvw;
+  }
+}

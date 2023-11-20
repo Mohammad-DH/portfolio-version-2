@@ -1,0 +1,8 @@
+.intro {
+  transform: perspective(500px) translateZ(-1500px);
+  z-index: -1;
+}
+.introCard {
+  justify-content: center;
+  align-items: center;
+}

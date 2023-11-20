@@ -1,0 +1,158 @@
+.experience {
+  transform: perspective(500px) translateZ(-6000px);
+  z-index: -4;
+}
+.experienceCard {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+}
+.experienceCardItems {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.experienceCardTitle {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.experienceCardBox {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.experienceImages {
+  object-fit: contain;
+  width: 50%;
+  position: relative;
+  height: unset;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+.experienceImages:hover {
+  transform: scale(1.02);
+}
+
+.experienceCardPanel {
+  position: relative;
+  height: 100%;
+  background-color: #4971ff;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+.experienceCardPanel h3 {
+  font-size: 3rem;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 0.6rem;
+}
+.experienceCardPanel p {
+  font-size: 2rem;
+  color: white;
+  text-transform: capitalize;
+  padding-left: 1rem;
+}
+
+/* Hide the scrollbar */
+.experienceCardPanel {
+  font-family: "Cormorant Garamond SemiBold", serif;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+/* Hide the scrollbar for all browsers except Firefox */
+.experienceCardPanel::-webkit-scrollbar {
+  display: none;
+}
+
+.experienceCardPanelText {
+  position: absolute;
+  width: 90%;
+  opacity: 0;
+  display: none;
+}
+
+/* smartphone */
+@media all and (max-width: 480px) {
+  .mobileExperienceCard {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experienceCardTitle {
+    justify-content: center;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .experienceCardTitle img {
+    height: 80%;
+  }
+
+  .mobileExperienceCardPanel {
+    height: 70%;
+    width: 100%;
+    aspect-ratio: unset;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .experienceCardPanel h3 {
+    font-size: 2rem;
+    padding-bottom: 0.6rem;
+  }
+  .experienceCardPanel p {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .mobileExperienceCardBox {
+    width: fit-content;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experienceImages {
+    width: 90%;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .experienceArrow {
+    padding-right: 3vw;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .experienceArrowBox {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .experienceArrowRight {
+    transform: rotate(180deg);
+  }
+}

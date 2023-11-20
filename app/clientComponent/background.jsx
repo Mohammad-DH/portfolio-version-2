@@ -46,7 +46,7 @@ export default function Background({ children }) {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "100svh",
         width: "100vw",
         position: "fixed",
         top: 0,
