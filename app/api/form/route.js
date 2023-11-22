@@ -14,8 +14,6 @@ export async function POST(req) {
       date: new Date(),
     });
 
-    console.log("contact", contact);
-
     return NextResponse.json({ message: "ok" }, { status: 200 });
   } catch (error) {
     return NextResponse.json(

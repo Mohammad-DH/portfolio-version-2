@@ -7,12 +7,16 @@ export default function Guide() {
   return (
     <div className={[styles.guide, "page", "TEST"].join(" ")}>
       <div className={["card", styles.guideCard, "CARD1"].join(" ")}>
-        <Image src={guideImage} className={"Images"} alt="guide Image" />
+        <Image src={guideImage} className={"Images"} alt="scroll and explore" />
       </div>
       <div
         className={["card", "mobileCard", styles.guideCard, "CARD1"].join(" ")}
       >
-        <Image src={mobileGuideImage} className={"Images"} alt="guide Image" />
+        <Image
+          src={mobileGuideImage}
+          className={"Images"}
+          alt="scroll and explore"
+        />
       </div>
     </div>
   );

@@ -7,12 +7,20 @@ export default function Name() {
   return (
     <div className={[styles.name, "page", "TEST2"].join(" ")}>
       <div className={["card", styles.nameCard, "CARD2"].join(" ")}>
-        <Image className={"Images"} src={nameImage} alt="name Image" />
+        <Image
+          className={"Images"}
+          src={nameImage}
+          alt="mohammad dehgani aka mr.j"
+        />
       </div>
       <div
         className={["card", "mobileCard", styles.nameCard, "CARD2"].join(" ")}
       >
-        <Image className={"Images"} src={mobileNameImage} alt="name Image" />
+        <Image
+          className={"Images"}
+          src={mobileNameImage}
+          alt="mohammad dehgani aka mr.j"
+        />
       </div>
     </div>
   );

@@ -166,7 +166,6 @@ export default function Contact() {
       setName("");
       setEmail("");
       setMessage("");
-      console.log("res ", data);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -183,14 +182,12 @@ export default function Contact() {
       });
 
       const data = await response.json();
-      console.log("res ", data);
     } catch (error) {
       console.error("Error:", error);
     }
   };
 
   const reactionClicked = async (textClassName, emojiClassName, reaction) => {
-    console.log("reaction clicked");
     localStorage.setItem(
       "mr-j.dev_ReactionClassName",
       JSON.stringify({ textClassName, emojiClassName })
@@ -239,7 +236,6 @@ export default function Contact() {
       });
 
       const data = await response.json();
-      console.log("res ", data);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -280,6 +276,7 @@ export default function Contact() {
           <Image
             className={[styles.contactImage, styles.contactImage1].join(" ")}
             src={contactImage1}
+            alt="dont be shy"
           />
         </div>
         <div className={[styles.contactPanel].join(" ")}>
@@ -291,6 +288,7 @@ export default function Contact() {
             <Image
               className={[styles.contactReactionTitle].join(" ")}
               src={reaction}
+              alt="reaction"
             />
             <div className={[styles.contactReactionItems].join(" ")}>
               <div className={[styles.contactEmojiName].join(" ")}>
@@ -332,6 +330,7 @@ export default function Contact() {
               </div>
               <div className={[styles.contactEmojiImages].join(" ")}>
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji1"].join(" ")}
                   src={emojiSad}
                   onClick={() => reactionClicked(".emojiText1", ".emoji1", 1)}
@@ -345,6 +344,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji2"].join(" ")}
                   src={emojiMeh}
                   onClick={() => reactionClicked(".emojiText2", ".emoji2", 2)}
@@ -358,6 +358,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji3"].join(" ")}
                   src={emojiPoker}
                   onClick={() => reactionClicked(".emojiText3", ".emoji3", 3)}
@@ -371,6 +372,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji4"].join(" ")}
                   src={emojiHappy}
                   onClick={() => reactionClicked(".emojiText4", ".emoji4", 4)}
@@ -384,6 +386,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji5"].join(" ")}
                   src={emojiLoved}
                   onClick={() => reactionClicked(".emojiText5", ".emoji5", 5)}
@@ -400,6 +403,7 @@ export default function Contact() {
             </div>
 
             <Image
+              alt="refresh btn"
               className={[styles.contactReactionRefresh, "refresh"].join(" ")}
               src={refresh}
               onClick={refreshReaction}
@@ -411,12 +415,14 @@ export default function Contact() {
           >
             <div className={[styles.contactPanelImages, "hi"].join(" ")}>
               <Image
+                alt="hi"
                 className={[styles.contactPanelHi].join(" ")}
                 src={hiImage}
               />
             </div>
             <div className={[styles.contactPanelImages, "hand"].join(" ")}>
               <Image
+                alt="shaking hand"
                 className={[styles.contactPanelHand].join(" ")}
                 src={handImage}
               />
@@ -429,6 +435,7 @@ export default function Contact() {
               ].join(" ")}
             >
               <Image
+                alt="heart"
                 className={[styles.contactPanelHeart].join(" ")}
                 src={heartImage}
               />
@@ -460,6 +467,7 @@ export default function Contact() {
               className={[styles.contactPanelBtn].join(" ")}
             >
               <Image
+                alt="send btn"
                 className={[styles.contactPanelBtnImages].join(" ")}
                 src={sendImage}
               />
@@ -467,6 +475,7 @@ export default function Contact() {
           </div>
           <div className={[styles.contactPanelBox4].join(" ")}>
             <Image
+              alt="resume"
               onClick={() => window.open("/resume.pdf", "_blank")}
               className={[
                 styles.contactSocialImages,
@@ -476,18 +485,22 @@ export default function Contact() {
             />
 
             <Image
+              alt="linkedin"
               className={[styles.contactSocialImages].join(" ")}
               src={linkedin}
             />
             <Image
+              alt="github"
               className={[styles.contactSocialImages].join(" ")}
               src={github}
             />
             <Image
+              alt="instagram"
               className={[styles.contactSocialImages].join(" ")}
               src={instagram}
             />
             <Image
+              alt="youtube"
               className={[styles.contactSocialImages].join(" ")}
               src={youtube}
             />
@@ -501,6 +514,7 @@ export default function Contact() {
           <Image
             className={[styles.contactImage, styles.contactImage2].join(" ")}
             src={contactImage2}
+            alt="just say hi"
           />
         </div>
       </div>
@@ -513,7 +527,11 @@ export default function Contact() {
         {/* top */}
 
         <div className={[styles.contactImagesBox].join(" ")}>
-          <Image className={[styles.contactImage].join(" ")} src={topImage} />
+          <Image
+            className={[styles.contactImage].join(" ")}
+            src={topImage}
+            alt="dont be shy"
+          />
         </div>
         {/* form */}
         <div className={[styles.contactPanel].join(" ")}>
@@ -521,6 +539,7 @@ export default function Contact() {
             <Image
               className={[styles.contactReactionTitle].join(" ")}
               src={reaction}
+              alt="reaction"
             />
             <div className={[styles.contactReactionItems].join(" ")}>
               <div className={[styles.contactEmojiName].join(" ")}>
@@ -567,26 +586,31 @@ export default function Contact() {
               </div>
               <div className={[styles.contactEmojiImages].join(" ")}>
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji1"].join(" ")}
                   src={emojiSad}
                   onClick={() => reactionClicked(".emojiText1", ".emoji1", 1)}
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji2"].join(" ")}
                   src={emojiMeh}
                   onClick={() => reactionClicked(".emojiText2", ".emoji2", 2)}
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji3"].join(" ")}
                   src={emojiPoker}
                   onClick={() => reactionClicked(".emojiText3", ".emoji3", 3)}
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji4"].join(" ")}
                   src={emojiHappy}
                   onClick={() => reactionClicked(".emojiText4", ".emoji4", 4)}
                 />
                 <Image
+                  alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji5"].join(" ")}
                   src={emojiLoved}
                   onClick={() => reactionClicked(".emojiText5", ".emoji5", 5)}
@@ -600,12 +624,14 @@ export default function Contact() {
           >
             <div className={[styles.contactPanelImages, "hi"].join(" ")}>
               <Image
+                alt="hi"
                 className={[styles.contactPanelHi].join(" ")}
                 src={hiImage}
               />
             </div>
             <div className={[styles.contactPanelImages, "hand"].join(" ")}>
               <Image
+                alt="shaking hand"
                 className={[styles.contactPanelHand].join(" ")}
                 src={handImage}
               />
@@ -618,6 +644,7 @@ export default function Contact() {
               ].join(" ")}
             >
               <Image
+                alt="heart"
                 className={[styles.contactPanelHeart].join(" ")}
                 src={heartImage}
               />
@@ -626,20 +653,20 @@ export default function Contact() {
           <div className={[styles.contactPanelBox3].join(" ")}>
             <input
               type="text"
-              id="name"
+              id="mobile_name"
               placeholder="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
               type="email"
-              id="email"
+              id="mobile_email"
               placeholder="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
-              id="message"
+              id="mobile_message"
               placeholder="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -649,6 +676,7 @@ export default function Contact() {
               className={[styles.contactPanelBtn].join(" ")}
             >
               <Image
+                alt="send btn"
                 className={[styles.contactPanelBtnImages].join(" ")}
                 src={sendImage}
               />
@@ -656,6 +684,7 @@ export default function Contact() {
           </div>
           <div className={[styles.contactPanelBox4].join(" ")}>
             <Image
+              alt="resume"
               onClick={() => window.open("/resume.pdf", "_blank")}
               className={[
                 styles.contactSocialImages,
@@ -665,10 +694,12 @@ export default function Contact() {
             />
 
             <Image
+              alt="linkedin"
               className={[styles.contactSocialImages].join(" ")}
               src={linkedin}
             />
             <Image
+              alt="github"
               className={[styles.contactSocialImages].join(" ")}
               src={github}
               onClick={() =>
@@ -676,10 +707,12 @@ export default function Contact() {
               }
             />
             <Image
+              alt="instagram"
               className={[styles.contactSocialImages].join(" ")}
               src={instagram}
             />
             <Image
+              alt="youtube"
               className={[styles.contactSocialImages].join(" ")}
               src={youtube}
             />
@@ -687,7 +720,11 @@ export default function Contact() {
         </div>
         {/* down */}
         <div className={[styles.contactImagesBox].join(" ")}>
-          <Image className={[styles.contactImage].join(" ")} src={downImage} />
+          <Image
+            className={[styles.contactImage].join(" ")}
+            src={downImage}
+            alt="just say hi"
+          />
         </div>
       </div>
     </div>

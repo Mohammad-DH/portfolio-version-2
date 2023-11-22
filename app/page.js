@@ -30,7 +30,6 @@ export default function Home() {
   if (lenis) {
     lenis.on("scroll", (e) => {
       let value = parseInt(e.animate.value);
-      // console.log(value);
 
       gsap.to(".TEST", {
         translateZ: value,

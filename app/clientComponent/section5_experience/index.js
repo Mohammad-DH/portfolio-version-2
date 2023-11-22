@@ -44,25 +44,26 @@ export default function Experience() {
   };
 
   const SETExp = (id) => {
-    console.log(id);
     if (id !== Exp) {
       gsap.to(`.exp${id}`, {
         ease: "linear",
         duration: 0.3,
         fill: "#4971ff",
       });
-      gsap.to(`.exp${Exp}`, {
-        ease: "linear",
-        duration: 0.3,
-        fill: "black",
-      });
+      if (Exp > 0) {
+        gsap.to(`.exp${Exp}`, {
+          ease: "linear",
+          duration: 0.3,
+          fill: "black",
+        });
+        gsap.to(`.expText${Exp}`, {
+          ease: "linear",
+          duration: 1,
+          opacity: "0%",
+          display: "none",
+        });
+      }
 
-      gsap.to(`.expText${Exp}`, {
-        ease: "linear",
-        duration: 1,
-        opacity: "0%",
-        display: "none",
-      });
       setExp(id);
       gsap.to(`.expText${id}`, {
         ease: "linear",
@@ -74,19 +75,20 @@ export default function Experience() {
   };
 
   const SETExpMobile = (id) => {
-    console.log(id);
     if (id !== Exp) {
-      gsap.to(`.exp${Exp}`, {
-        ease: "linear",
-        duration: 1,
-        opacity: "0%",
-      });
-      gsap.to(`.expText${Exp}`, {
-        ease: "linear",
-        duration: 1,
-        opacity: "0%",
-        display: "none",
-      });
+      if (Exp > 0) {
+        gsap.to(`.exp${Exp}`, {
+          ease: "linear",
+          duration: 1,
+          opacity: "0%",
+        });
+        gsap.to(`.expText${Exp}`, {
+          ease: "linear",
+          duration: 1,
+          opacity: "0%",
+          display: "none",
+        });
+      }
       setExp(id);
       gsap.to(`.exp${id}`, {
         ease: "linear",
@@ -107,7 +109,7 @@ export default function Experience() {
       <div className={["card", styles.experienceCard, "CARD5"].join(" ")}>
         <div className={[styles.experienceCardItems].join(" ")}>
           <div className={[styles.experienceCardTitle].join(" ")}>
-            <Image src={experienceImage} />
+            <Image src={experienceImage} alt="experiences" />
           </div>
           <div className={[styles.experienceCardBox].join(" ")}>
             <ImageComponent1 Exp={Exp} set={SETExp} />
@@ -289,7 +291,7 @@ export default function Experience() {
         ].join(" ")}
       >
         <div className={[styles.experienceCardTitle].join(" ")}>
-          <Image src={experienceImage} />
+          <Image src={experienceImage} alt="experiences" />
         </div>
 
         <div
@@ -460,21 +462,25 @@ export default function Experience() {
 
         <div className={[styles.mobileExperienceCardBox].join(" ")}>
           <Image
+            alt="experience"
             className={[styles.experienceImages, "exp1"].join(" ")}
             src={mobileExp1Image}
           />
 
           <Image
+            alt="experience"
             className={[styles.experienceImages, "exp2"].join(" ")}
             src={mobileExp2Image}
           />
 
           <Image
+            alt="experience"
             className={[styles.experienceImages, "exp3"].join(" ")}
             src={mobileExp3Image}
           />
 
           <Image
+            alt="experience"
             className={[styles.experienceImages, "exp4"].join(" ")}
             src={mobileExp4Image}
           />
@@ -483,11 +489,13 @@ export default function Experience() {
         <div className={[styles.experienceArrow].join(" ")}>
           <div className={[styles.experienceArrowBox].join(" ")}>
             <Image
+              alt="arrowToPre"
               onClick={preExp}
               className={[styles.experienceArrowImage].join(" ")}
               src={arrowImage}
             />
             <Image
+              alt="arrowToNext"
               onClick={nextExp}
               className={[
                 styles.experienceArrowImage,
