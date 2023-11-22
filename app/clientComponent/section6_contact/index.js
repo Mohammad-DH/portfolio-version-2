@@ -117,6 +117,7 @@ export default function Contact() {
       gsap.to(className, {
         opacity: 0.8,
         ease: "power1.inOut",
+        display: "block",
         duration: 0.5,
       });
 
@@ -136,6 +137,7 @@ export default function Contact() {
       gsap.to(className, {
         opacity: 0,
         ease: "power1.inOut",
+        display: "none",
         duration: 0.5,
       });
 
@@ -188,7 +190,7 @@ export default function Contact() {
   };
 
   const reactionClicked = async (textClassName, emojiClassName, reaction) => {
-    console.log("reacation clicked");
+    console.log("reaction clicked");
     localStorage.setItem(
       "mr-j.dev_ReactionClassName",
       JSON.stringify({ textClassName, emojiClassName })
@@ -523,6 +525,7 @@ export default function Contact() {
             <div className={[styles.contactReactionItems].join(" ")}>
               <div className={[styles.contactEmojiName].join(" ")}>
                 <span
+                  onClick={refreshReaction}
                   className={[styles.contactEmojiNameText, "emojiText1"].join(
                     " "
                   )}
@@ -530,6 +533,7 @@ export default function Contact() {
                   bad
                 </span>
                 <span
+                  onClick={refreshReaction}
                   className={[styles.contactEmojiNameText, "emojiText2"].join(
                     " "
                   )}
@@ -537,6 +541,7 @@ export default function Contact() {
                   meh
                 </span>
                 <span
+                  onClick={refreshReaction}
                   className={[styles.contactEmojiNameText, "emojiText3"].join(
                     " "
                   )}
@@ -544,6 +549,7 @@ export default function Contact() {
                   ok
                 </span>
                 <span
+                  onClick={refreshReaction}
                   className={[styles.contactEmojiNameText, "emojiText4"].join(
                     " "
                   )}
@@ -551,6 +557,7 @@ export default function Contact() {
                   good
                 </span>
                 <span
+                  onClick={refreshReaction}
                   className={[styles.contactEmojiNameText, "emojiText5"].join(
                     " "
                   )}
@@ -563,75 +570,29 @@ export default function Contact() {
                   className={[styles.contactEmoji, "emoji", "emoji1"].join(" ")}
                   src={emojiSad}
                   onClick={() => reactionClicked(".emojiText1", ".emoji1", 1)}
-                  onMouseEnter={() =>
-                    !Reaction &&
-                    emojiTextAnimationEnter(".emojiText1", ".emoji1")
-                  }
-                  onMouseLeave={() =>
-                    !Reaction &&
-                    emojiTextAnimationLeave(".emojiText1", ".emoji1")
-                  }
                 />
                 <Image
                   className={[styles.contactEmoji, "emoji", "emoji2"].join(" ")}
                   src={emojiMeh}
                   onClick={() => reactionClicked(".emojiText2", ".emoji2", 2)}
-                  onMouseEnter={() =>
-                    !Reaction &&
-                    emojiTextAnimationEnter(".emojiText2", ".emoji2")
-                  }
-                  onMouseLeave={() =>
-                    !Reaction &&
-                    emojiTextAnimationLeave(".emojiText2", ".emoji2")
-                  }
                 />
                 <Image
                   className={[styles.contactEmoji, "emoji", "emoji3"].join(" ")}
                   src={emojiPoker}
                   onClick={() => reactionClicked(".emojiText3", ".emoji3", 3)}
-                  onMouseEnter={() =>
-                    !Reaction &&
-                    emojiTextAnimationEnter(".emojiText3", ".emoji3")
-                  }
-                  onMouseLeave={() =>
-                    !Reaction &&
-                    emojiTextAnimationLeave(".emojiText3", ".emoji3")
-                  }
                 />
                 <Image
                   className={[styles.contactEmoji, "emoji", "emoji4"].join(" ")}
                   src={emojiHappy}
                   onClick={() => reactionClicked(".emojiText4", ".emoji4", 4)}
-                  onMouseEnter={() =>
-                    !Reaction &&
-                    emojiTextAnimationEnter(".emojiText4", ".emoji4")
-                  }
-                  onMouseLeave={() =>
-                    !Reaction &&
-                    emojiTextAnimationLeave(".emojiText4", ".emoji4")
-                  }
                 />
                 <Image
                   className={[styles.contactEmoji, "emoji", "emoji5"].join(" ")}
                   src={emojiLoved}
                   onClick={() => reactionClicked(".emojiText5", ".emoji5", 5)}
-                  onMouseEnter={() =>
-                    !Reaction &&
-                    emojiTextAnimationEnter(".emojiText5", ".emoji5")
-                  }
-                  onMouseLeave={() =>
-                    !Reaction &&
-                    emojiTextAnimationLeave(".emojiText5", ".emoji5")
-                  }
                 />
               </div>
             </div>
-
-            <Image
-              className={[styles.contactReactionRefresh, "refresh"].join(" ")}
-              src={refresh}
-              onClick={refreshReaction}
-            />
           </div>
           <div
             onClick={hiClicked}
@@ -710,6 +671,9 @@ export default function Contact() {
             <Image
               className={[styles.contactSocialImages].join(" ")}
               src={github}
+              onClick={() =>
+                window.open("https://github.com/Mohammad-DH", "_blank")
+              }
             />
             <Image
               className={[styles.contactSocialImages].join(" ")}

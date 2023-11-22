@@ -1,6 +1,6 @@
 .intro {
-  transform: perspective(500px) translateZ(-1500px);
-  z-index: -1;
+  transform: perspective(500px) translateZ(-3000px);
+  z-index: -2;
 }
 .introCard {
   justify-content: center;

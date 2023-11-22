@@ -305,6 +305,9 @@
   }
   .contactEmojiNameText {
     font-size: 12vw;
+    pointer-events: all;
+    display: none;
+    cursor: pointer;
   }
   .contactEmoji {
     width: 10dvw;

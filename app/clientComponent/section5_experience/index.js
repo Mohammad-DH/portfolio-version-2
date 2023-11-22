@@ -128,16 +128,16 @@ export default function Experience() {
               During my time at baloot studio , I embraced an exciting
               challenge: developing a real-time online game server from scratch
               within a tight deadline. This project presented me with new
-              problems that tested my skills and problem-solving abilities.{" "}
+              problems that tested my skills and problem-solving abilities.
               <br />
               <br />
-              I began by carefully designing the server's architecture, ensuring
-              it would meet the demands of a real-time gaming experience. From
-              there, I transitioned into the development phase, where I brought
-              the server to life by implementing the necessary features and
-              functionalities. Testing and debugging played a crucial role as I
-              fine-tuned the server's performance and addressed any issues that
-              emerged along the way.
+              I began by carefully designing the server&apos;s architecture,
+              ensuring it would meet the demands of a real-time gaming
+              experience. From there, I transitioned into the development phase,
+              where I brought the server to life by implementing the necessary
+              features and functionalities. Testing and debugging played a
+              crucial role as I fine-tuned the server&apos;s performance and
+              addressed any issues that emerged along the way.
               <br />
               <br />
               To ensure a smooth and efficient deployment process, I leveraged a
@@ -179,9 +179,9 @@ export default function Experience() {
               <br />
               <br />
               after analyzing every possible aspect I proceeded to the design
-              phase. First, I designed the app's user interface then I dived
-              into the architecture design, mapping out the overall features and
-              creating UML diagrams.
+              phase. First, I designed the app&apos;s user interface then I
+              dived into the architecture design, mapping out the overall
+              features and creating UML diagrams.
               <br />
               <br />
               With the design phase complete, I transitioned into the
@@ -249,8 +249,8 @@ export default function Experience() {
             <h3>humble beginning</h3>
             <p>
               The journey of a thousand miles begins with a single step. A
-              little kid who's learning to walk has no idea where he's going to
-              step one day and where he's going to fall ;
+              little kid who&apos;s learning to walk has no idea where he&apos;s
+              going to step one day and where he&apos;s going to fall ;
               <br />
               <br />
               darning my freelancing time i worked on few projects mostly small
@@ -260,7 +260,7 @@ export default function Experience() {
               developer , i was so happy to experience a true team work
               <br />
               <br />
-              however it wasn't easy for me , development challenges and
+              however it wasn&apos;t easy for me , development challenges and
               problems aside , adapting to the team was my biggest challenge and
               my biggest gain , i put every bit of my energy to be a perfect fit
               to the team , from learning new things to changing my habits ,
@@ -269,11 +269,11 @@ export default function Experience() {
               team and what Are the red lines to maximize the potential of team
               by analyzing , questioning and using other people experiences.
               <br />
-              <br />i wasn't getting paid fierily but i had no problems since i
-              knew its a step to grow , for a better future there should be a
-              sacrifice today ; looking at it today , i prod of that young man
-              who endure pain and growth to a fine man , deadly wounds of those
-              days are just little marks and stories to entertain others .
+              <br />i wasn&apos;t getting paid fierily but i had no problems
+              since i knew its a step to grow , for a better future there should
+              be a sacrifice today ; looking at it today , i prod of that young
+              man who endure pain and growth to a fine man , deadly wounds of
+              those days are just little marks and stories to entertain others .
             </p>
           </div>
         </div>
@@ -308,16 +308,16 @@ export default function Experience() {
               During my time at baloot studio , I embraced an exciting
               challenge: developing a real-time online game server from scratch
               within a tight deadline. This project presented me with new
-              problems that tested my skills and problem-solving abilities.{" "}
+              problems that tested my skills and problem-solving abilities.
               <br />
               <br />
-              I began by carefully designing the server's architecture, ensuring
-              it would meet the demands of a real-time gaming experience. From
-              there, I transitioned into the development phase, where I brought
-              the server to life by implementing the necessary features and
-              functionalities. Testing and debugging played a crucial role as I
-              fine-tuned the server's performance and addressed any issues that
-              emerged along the way.
+              I began by carefully designing the server&apos;s architecture,
+              ensuring it would meet the demands of a real-time gaming
+              experience. From there, I transitioned into the development phase,
+              where I brought the server to life by implementing the necessary
+              features and functionalities. Testing and debugging played a
+              crucial role as I fine-tuned the server&apos;s performance and
+              addressed any issues that emerged along the way.
               <br />
               <br />
               To ensure a smooth and efficient deployment process, I leveraged a
@@ -359,9 +359,9 @@ export default function Experience() {
               <br />
               <br />
               after analyzing every possible aspect I proceeded to the design
-              phase. First, I designed the app's user interface then I dived
-              into the architecture design, mapping out the overall features and
-              creating UML diagrams.
+              phase. First, I designed the app&apos;s user interface then I
+              dived into the architecture design, mapping out the overall
+              features and creating UML diagrams.
               <br />
               <br />
               With the design phase complete, I transitioned into the
@@ -429,8 +429,8 @@ export default function Experience() {
             <h3>humble beginning</h3>
             <p>
               The journey of a thousand miles begins with a single step. A
-              little kid who's learning to walk has no idea where he's going to
-              step one day and where he's going to fall ;
+              little kid who&apos;s learning to walk has no idea where he&apos;s
+              going to step one day and where he&apos;s going to fall ;
               <br />
               <br />
               darning my freelancing time i worked on few projects mostly small
@@ -440,7 +440,7 @@ export default function Experience() {
               developer , i was so happy to experience a true team work
               <br />
               <br />
-              however it wasn't easy for me , development challenges and
+              however it wasn&apos;t easy for me , development challenges and
               problems aside , adapting to the team was my biggest challenge and
               my biggest gain , i put every bit of my energy to be a perfect fit
               to the team , from learning new things to changing my habits ,
@@ -449,11 +449,11 @@ export default function Experience() {
               team and what Are the red lines to maximize the potential of team
               by analyzing , questioning and using other people experiences.
               <br />
-              <br />i wasn't getting paid fierily but i had no problems since i
-              knew its a step to grow , for a better future there should be a
-              sacrifice today ; looking at it today , i prod of that young man
-              who endure pain and growth to a fine man , deadly wounds of those
-              days are just little marks and stories to entertain others .
+              <br />i wasn&apos;t getting paid fierily but i had no problems
+              since i knew its a step to grow , for a better future there should
+              be a sacrifice today ; looking at it today , i prod of that young
+              man who endure pain and growth to a fine man , deadly wounds of
+              those days are just little marks and stories to entertain others .
             </p>
           </div>
         </div>
