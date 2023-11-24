@@ -50,13 +50,13 @@ html.lenis {
 
 /* font */
 @font-face {
-  font-family: "Cormorant Garamond SemiBold";
-  src: url("./assets/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  font-family: "Cormorant Garamond Regular";
+  src: url("./assets/fonts/CormorantGaramond-Regular.woff2") format("woff2");
 }
 
 /* Hide the scrollbar */
 body {
-  font-family: "Cormorant Garamond SemiBold", serif;
+  font-family: "Cormorant Garamond Regular", serif;
   /* overflow-x: hidden; */
   /* -ms-overflow-style: none; */
   /* scrollbar-width: none; */
