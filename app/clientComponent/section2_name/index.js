@@ -8,6 +8,7 @@ export default function Name() {
     <div className={[styles.name, "page", "TEST2"].join(" ")}>
       <div className={["card", styles.nameCard, "CARD2"].join(" ")}>
         <Image
+          fetchPriority="low"
           className={"Images"}
           src={nameImage}
           alt="mohammad dehgani aka mr.j"
@@ -17,6 +18,7 @@ export default function Name() {
         className={["card", "mobileCard", styles.nameCard, "CARD2"].join(" ")}
       >
         <Image
+          fetchPriority="low"
           className={"Images"}
           src={mobileNameImage}
           alt="mohammad dehgani aka mr.j"

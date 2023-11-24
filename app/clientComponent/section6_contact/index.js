@@ -274,6 +274,7 @@ export default function Contact() {
           )}
         >
           <Image
+            fetchPriority="low"
             className={[styles.contactImage, styles.contactImage1].join(" ")}
             src={contactImage1}
             alt="dont be shy"
@@ -286,6 +287,7 @@ export default function Contact() {
             className={[styles.contactPanelBox1].join(" ")}
           >
             <Image
+              fetchPriority="low"
               className={[styles.contactReactionTitle].join(" ")}
               src={reaction}
               alt="reaction"
@@ -330,6 +332,7 @@ export default function Contact() {
               </div>
               <div className={[styles.contactEmojiImages].join(" ")}>
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji1"].join(" ")}
                   src={emojiSad}
@@ -344,6 +347,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji2"].join(" ")}
                   src={emojiMeh}
@@ -358,6 +362,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji3"].join(" ")}
                   src={emojiPoker}
@@ -372,6 +377,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji4"].join(" ")}
                   src={emojiHappy}
@@ -386,6 +392,7 @@ export default function Contact() {
                   }
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji5"].join(" ")}
                   src={emojiLoved}
@@ -403,6 +410,7 @@ export default function Contact() {
             </div>
 
             <Image
+              fetchPriority="low"
               alt="refresh btn"
               className={[styles.contactReactionRefresh, "refresh"].join(" ")}
               src={refresh}
@@ -415,6 +423,7 @@ export default function Contact() {
           >
             <div className={[styles.contactPanelImages, "hi"].join(" ")}>
               <Image
+                fetchPriority="low"
                 alt="hi"
                 className={[styles.contactPanelHi].join(" ")}
                 src={hiImage}
@@ -422,6 +431,7 @@ export default function Contact() {
             </div>
             <div className={[styles.contactPanelImages, "hand"].join(" ")}>
               <Image
+                fetchPriority="low"
                 alt="shaking hand"
                 className={[styles.contactPanelHand].join(" ")}
                 src={handImage}
@@ -435,6 +445,7 @@ export default function Contact() {
               ].join(" ")}
             >
               <Image
+                fetchPriority="low"
                 alt="heart"
                 className={[styles.contactPanelHeart].join(" ")}
                 src={heartImage}
@@ -467,6 +478,7 @@ export default function Contact() {
               className={[styles.contactPanelBtn].join(" ")}
             >
               <Image
+                fetchPriority="low"
                 alt="send btn"
                 className={[styles.contactPanelBtnImages].join(" ")}
                 src={sendImage}
@@ -475,6 +487,7 @@ export default function Contact() {
           </div>
           <div className={[styles.contactPanelBox4].join(" ")}>
             <Image
+              fetchPriority="low"
               alt="resume"
               onClick={() => window.open("/resume.pdf", "_blank")}
               className={[
@@ -485,21 +498,25 @@ export default function Contact() {
             />
 
             <Image
+              fetchPriority="low"
               alt="linkedin"
               className={[styles.contactSocialImages].join(" ")}
               src={linkedin}
             />
             <Image
+              fetchPriority="low"
               alt="github"
               className={[styles.contactSocialImages].join(" ")}
               src={github}
             />
             <Image
+              fetchPriority="low"
               alt="instagram"
               className={[styles.contactSocialImages].join(" ")}
               src={instagram}
             />
             <Image
+              fetchPriority="low"
               alt="youtube"
               className={[styles.contactSocialImages].join(" ")}
               src={youtube}
@@ -512,6 +529,7 @@ export default function Contact() {
           )}
         >
           <Image
+            fetchPriority="low"
             className={[styles.contactImage, styles.contactImage2].join(" ")}
             src={contactImage2}
             alt="just say hi"
@@ -528,6 +546,7 @@ export default function Contact() {
 
         <div className={[styles.contactImagesBox].join(" ")}>
           <Image
+            fetchPriority="low"
             className={[styles.contactImage].join(" ")}
             src={topImage}
             alt="dont be shy"
@@ -537,6 +556,7 @@ export default function Contact() {
         <div className={[styles.contactPanel].join(" ")}>
           <div className={[styles.contactPanelBox1].join(" ")}>
             <Image
+              fetchPriority="low"
               className={[styles.contactReactionTitle].join(" ")}
               src={reaction}
               alt="reaction"
@@ -586,30 +606,35 @@ export default function Contact() {
               </div>
               <div className={[styles.contactEmojiImages].join(" ")}>
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji1"].join(" ")}
                   src={emojiSad}
                   onClick={() => reactionClicked(".emojiText1", ".emoji1", 1)}
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji2"].join(" ")}
                   src={emojiMeh}
                   onClick={() => reactionClicked(".emojiText2", ".emoji2", 2)}
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji3"].join(" ")}
                   src={emojiPoker}
                   onClick={() => reactionClicked(".emojiText3", ".emoji3", 3)}
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji4"].join(" ")}
                   src={emojiHappy}
                   onClick={() => reactionClicked(".emojiText4", ".emoji4", 4)}
                 />
                 <Image
+                  fetchPriority="low"
                   alt="emoji"
                   className={[styles.contactEmoji, "emoji", "emoji5"].join(" ")}
                   src={emojiLoved}
@@ -624,6 +649,7 @@ export default function Contact() {
           >
             <div className={[styles.contactPanelImages, "hi"].join(" ")}>
               <Image
+                fetchPriority="low"
                 alt="hi"
                 className={[styles.contactPanelHi].join(" ")}
                 src={hiImage}
@@ -631,6 +657,7 @@ export default function Contact() {
             </div>
             <div className={[styles.contactPanelImages, "hand"].join(" ")}>
               <Image
+                fetchPriority="low"
                 alt="shaking hand"
                 className={[styles.contactPanelHand].join(" ")}
                 src={handImage}
@@ -644,6 +671,7 @@ export default function Contact() {
               ].join(" ")}
             >
               <Image
+                fetchPriority="low"
                 alt="heart"
                 className={[styles.contactPanelHeart].join(" ")}
                 src={heartImage}
@@ -676,6 +704,7 @@ export default function Contact() {
               className={[styles.contactPanelBtn].join(" ")}
             >
               <Image
+                fetchPriority="low"
                 alt="send btn"
                 className={[styles.contactPanelBtnImages].join(" ")}
                 src={sendImage}
@@ -684,6 +713,7 @@ export default function Contact() {
           </div>
           <div className={[styles.contactPanelBox4].join(" ")}>
             <Image
+              fetchPriority="low"
               alt="resume"
               onClick={() => window.open("/resume.pdf", "_blank")}
               className={[
@@ -694,11 +724,13 @@ export default function Contact() {
             />
 
             <Image
+              fetchPriority="low"
               alt="linkedin"
               className={[styles.contactSocialImages].join(" ")}
               src={linkedin}
             />
             <Image
+              fetchPriority="low"
               alt="github"
               className={[styles.contactSocialImages].join(" ")}
               src={github}
@@ -707,11 +739,13 @@ export default function Contact() {
               }
             />
             <Image
+              fetchPriority="low"
               alt="instagram"
               className={[styles.contactSocialImages].join(" ")}
               src={instagram}
             />
             <Image
+              fetchPriority="low"
               alt="youtube"
               className={[styles.contactSocialImages].join(" ")}
               src={youtube}
@@ -721,6 +755,7 @@ export default function Contact() {
         {/* down */}
         <div className={[styles.contactImagesBox].join(" ")}>
           <Image
+            fetchPriority="low"
             className={[styles.contactImage].join(" ")}
             src={downImage}
             alt="just say hi"

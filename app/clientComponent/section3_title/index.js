@@ -8,6 +8,7 @@ export default function Title() {
     <div className={[styles.intro, "page", "TEST3"].join(" ")}>
       <div className={["card", styles.introCard, "CARD3"].join(" ")}>
         <Image
+          fetchPriority="low"
           className={"Images"}
           src={introImage}
           alt="problem solver experienced in full stack development"
@@ -17,6 +18,7 @@ export default function Title() {
         className={["card", "mobileCard", styles.introCard, "CARD3"].join(" ")}
       >
         <Image
+          fetchPriority="low"
           className={"Images"}
           src={mobileIntroImage}
           alt="problem solver experienced in full stack development"

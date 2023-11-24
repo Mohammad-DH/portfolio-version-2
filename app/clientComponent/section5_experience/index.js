@@ -109,7 +109,11 @@ export default function Experience() {
       <div className={["card", styles.experienceCard, "CARD5"].join(" ")}>
         <div className={[styles.experienceCardItems].join(" ")}>
           <div className={[styles.experienceCardTitle].join(" ")}>
-            <Image src={experienceImage} alt="experiences" />
+            <Image
+              fetchPriority="low"
+              src={experienceImage}
+              alt="experiences"
+            />
           </div>
           <div className={[styles.experienceCardBox].join(" ")}>
             <ImageComponent1 Exp={Exp} set={SETExp} />
@@ -292,7 +296,7 @@ export default function Experience() {
         ].join(" ")}
       >
         <div className={[styles.experienceCardTitle].join(" ")}>
-          <Image src={experienceImage} alt="experiences" />
+          <Image fetchPriority="low" src={experienceImage} alt="experiences" />
         </div>
 
         <div
@@ -464,24 +468,28 @@ export default function Experience() {
 
         <div className={[styles.mobileExperienceCardBox].join(" ")}>
           <Image
+            fetchPriority="low"
             alt="experience"
             className={[styles.experienceImages, "exp1"].join(" ")}
             src={mobileExp1Image}
           />
 
           <Image
+            fetchPriority="low"
             alt="experience"
             className={[styles.experienceImages, "exp2"].join(" ")}
             src={mobileExp2Image}
           />
 
           <Image
+            fetchPriority="low"
             alt="experience"
             className={[styles.experienceImages, "exp3"].join(" ")}
             src={mobileExp3Image}
           />
 
           <Image
+            fetchPriority="low"
             alt="experience"
             className={[styles.experienceImages, "exp4"].join(" ")}
             src={mobileExp4Image}
@@ -491,12 +499,14 @@ export default function Experience() {
         <div className={[styles.experienceArrow].join(" ")}>
           <div className={[styles.experienceArrowBox].join(" ")}>
             <Image
+              fetchPriority="low"
               alt="arrowToPre"
               onClick={preExp}
               className={[styles.experienceArrowImage].join(" ")}
               src={arrowImage}
             />
             <Image
+              fetchPriority="low"
               alt="arrowToNext"
               onClick={nextExp}
               className={[
