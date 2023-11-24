@@ -1,5 +1,9 @@
-import Background from "./clientComponent/background";
+// import Background from "./clientComponent/background";
 import "./globals.css";
+
+import dynamic from "next/dynamic";
+
+const Background = dynamic(() => import("./clientComponent/background"));
 
 export const metadata = {
   title: "Create Next App",
