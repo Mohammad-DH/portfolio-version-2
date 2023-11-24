@@ -267,9 +267,10 @@ export default function Experience() {
               my biggest gain , i put every bit of my energy to be a perfect fit
               to the team , from learning new things to changing my habits ,
               pipelines and styles according to seniors . after all it was the
-              job experience that shaped , i learned how to behave and work in a
-              team and what Are the red lines to maximize the potential of team
-              by analyzing , questioning and using other people experiences.
+              job experience that shaped me , i learned how to behave and work
+              in a team and what Are the red lines to maximize the potential of
+              team by analyzing , questioning and using other people
+              experiences.
               <br />
               <br />i wasn&apos;t getting paid fierily but i had no problems
               since i knew its a step to grow , for a better future there should
@@ -447,9 +448,10 @@ export default function Experience() {
               my biggest gain , i put every bit of my energy to be a perfect fit
               to the team , from learning new things to changing my habits ,
               pipelines and styles according to seniors . after all it was the
-              job experience that shaped , i learned how to behave and work in a
-              team and what Are the red lines to maximize the potential of team
-              by analyzing , questioning and using other people experiences.
+              job experience that shaped me , i learned how to behave and work
+              in a team and what Are the red lines to maximize the potential of
+              team by analyzing , questioning and using other people
+              experiences.
               <br />
               <br />i wasn&apos;t getting paid fierily but i had no problems
               since i knew its a step to grow , for a better future there should
