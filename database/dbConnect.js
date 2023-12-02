@@ -1,6 +1,7 @@
 import _mongoose, { connect } from "mongoose";
 
-const MONGODB_URI = "mongodb://localhost:27019/portfolio";
+// const MONGODB_URI = "mongodb://localhost:27017/portfolio";
+const MONGODB_URI = "mongodb://172.17.0.2:27017/portfolio";
 
 if (!MONGODB_URI || MONGODB_URI.length === 0) {
   throw new Error("Please add your MongoDB URI to .env.local");
@@ -38,6 +39,7 @@ async function dbConnect() {
       })
       .catch((error) => {
         console.error("❌ Connection to database failed");
+        console.error(error);
         throw error;
       });
   }
