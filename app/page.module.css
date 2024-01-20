@@ -7,4 +7,5 @@
   justify-content: center;
   overflow: hidden;
   z-index: 1;
+  /* transform: perspective(500px) translateZ(0px); */
 }
