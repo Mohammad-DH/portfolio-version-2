@@ -14,33 +14,9 @@
   margin: 0;
 }
 
-/* lenis recommendation */
-html {
-  scrollbar-width: none;
-}
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-
 .background {
-  height: 100svh;
-  width: 100vw;
+  height: 110dvh;
+  width: 100dvw;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,15 +33,6 @@ html.lenis {
 /* Hide the scrollbar */
 body {
   font-family: "Cormorant Garamond Regular", serif;
-  /* overflow-x: hidden; */
-  /* -ms-overflow-style: none; */
-  /* scrollbar-width: none; */
-  /* overflow-y: scroll; */
-}
-
-/* Hide the scrollbar for all browsers except Firefox */
-body::-webkit-scrollbar {
-  /* display: none; */
 }
 
 /* global values */
@@ -78,8 +45,8 @@ body::-webkit-scrollbar {
 }
 .page {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,9 +65,9 @@ body::-webkit-scrollbar {
     0.2
   ); /* Set a semi-transparent background color */
   border-radius: 1vw; /* Apply rounded corners to the element */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  filter: blur(7px);
+  /* filter: blur(7px); */
   padding: 20px; /* Add some padding to the content */
   display: flex;
 }
